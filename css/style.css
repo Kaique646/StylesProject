@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Slabo+27px&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Slabo 27px', serif;
+}
+
+/* header da página - ELEMENTO PAI DA LOGO E  MENU*/
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.383);
+}
+
+.header__titulo {
+    color: #fff;
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.menu__principal ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu__principal li {
+    margin: 0 6px;
+}
+
+.menu__item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu__item:hover {
+    color: #dc143c;
+}
+
+.icone {    
+    color: #dc143c;
+}
+/* fim header da página */
+
+/* container genérico - pode ser utilizado por todos  */
+.container {
+    width: 100%;
+    height: 100vh;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+}
+/* fim container */
+
+/* container 2 */
+.container2{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container2__box {
+    border: 1px dotted #0f1829;
+    width: 31%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__icone {
+    font-size: 70px;
+    margin-bottom: 20px;
+    /* border: 1px solid #fff;
+    padding: 30px;
+    border-radius: 50%; */
+    transition: transform 0.5s;
+}
+
+.box__icone:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+.box__titulo {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.box__paragrafo {
+    margin: 20px 0;
+    font-size: 18px;
+    width: 60%;
+    line-height: 28px;
+}
+
+.box__link {
+    margin: 20px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid #fff;
+    padding: 15px 70px;
+    border-radius: 70px;
+}
+
+.box__link:hover {
+    background-color: #0f1829;
+    border-color: #0f1829;
+}
+
+
+.titulo__texto__link{
+    color: #fff;    
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.titulo__texto__link  h2{ 
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.titulo__texto__link p {
+    font-size: 19px;
+    margin-bottom: 40px;
+}
+
+.titulo__texto__link a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 15px 40px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titulo__texto__link a:hover {
+    background-color: #dc143c;        
+}
+
+/* GALERIA DE IMAGENS */
+
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+
+.galeria__imagem {
+    width: 20vw;
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    padding: 10px 10px 20px 10px;
+    transition: transform 0.5s;
+}
+
+.galeria__imagem img {
+    width: 100%;
+    height: 23vh;
+}
+
+.rotacao__esquerda {
+    transform: rotate(15deg);
+}
+
+.rotacao__direita {
+    transform: rotate(-25deg);
+}
+
+.galeria__imagem:hover {
+    transform: rotate(0deg);
+}
+
+/* FIM GALERIA DE IMAGENS */
+
+
+
+
+
+/* rodape */
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer h3 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.redes__sociais i {
+    color: hsl(219, 38%, 30%);
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+.redes__sociais .fa-twitter:hover { color: #1DA1F2; }
+.redes__sociais .fa-instagram:hover {color: #8a3ab9; }
+.redes__sociais .fa-twitch:hover {color: #6441a5;}
+.redes__sociais .fa-discord:hover {color: #7289da;}
+.redes__sociais .fa-youtube:hover {color: #c4302b;}
+
+/* fim rodape */
+
+
+/* classes para cores de fundo  */
+.fundo__rosa { background-color: #dc143c;}
+.fundo__azul { background-color: #101d35;}
+.fundo__preto{background-color: #000;}
+
+/* classes para imagens de fundo */
+.imagem__fundo1 {  background-image: url(../images/banner-1.jpg);}
+.imagem__fundo2 {  background-image: url(../images/banner-4.jpg);}

@@ -1,0 +1,29 @@
+https://wireframe.cc/0JP4FG
+
+imagens-card - ficarão em um container de galeria
+class galeria ==Usar nea flex para fazer o posicionamento
+CONTAINER PARA IMAGENS - POSSO USAR DIV  MAS EXISTE UM TIPO DE DIV APENAS PARA IMAGENS
+
+
+figure é uma div(container) que tem o nome de figure a ideia é usar imagens dentro
+figcaption é uma legenda para a imagem, um texto que poderia ser substituído pela tag p
+usar figcaption quando estivermos dentro de figure, NÃO É OBRIGATÓRIO
+
+
+quando aplicamos o flex ele fará o possível para posicionar os elemtnos nas mesma linha
+por padrão ele tem a propriedade flex-direction = row deixa todos os filhos um ao lado outro
+Só que as vezes queremos que ocupe o definido e quando não couber na linha e deixe que os 
+elementos quebrem para as linhas abaixo
+flex-wrap - controlar a quebra de linha quando os elementos não couberem na linha desejada
+o padrão é não ter quebra ==> nowrap
+para ter a quebra = wrap
+
+https://lokeshdhakar.com/projects/lightbox2/
+precisa chamar a CSS e o JS dele da biblioteca
+copiar a pasta dist para o seu projeto
+
+
+
+
+
+
